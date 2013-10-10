@@ -5,3 +5,4 @@ Em.onLoad 'Ember.Application', (application) ->
 
     initialize: (container, app) ->
       app.register 'authResponse:json', Em.Auth.JsonAuthResponse
+      app.inject 'authResponse:json', 'auth', 'auth:main'

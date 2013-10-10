@@ -4,5 +4,6 @@ Em.onLoad 'Ember.Application', (application) ->
     before: 'ember-auth-load'
 
     initialize: (container, app) ->
-      app.register 'authResponse:json', Em.Auth.JsonAuthResponse
+      app.register 'authResponse:json', Em.Auth.JsonAuthResponse, \
+      { singleton: true }
       app.inject 'authResponse:json', 'auth', 'auth:main'

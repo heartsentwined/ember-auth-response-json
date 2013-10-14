@@ -12,3 +12,8 @@ Interpret response text as json.
 App.Auth = Em.Auth.extend
   response: 'json'
 ```
+
+License
+=======
+
+MIT
